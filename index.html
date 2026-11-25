@@ -95,7 +95,7 @@
     background:linear-gradient(90deg,rgba(5,5,6,.96) 0%,rgba(5,5,6,.88) 30%,rgba(5,5,6,.45) 55%,rgba(5,5,6,.12) 78%,rgba(5,5,6,.35) 100%),
                linear-gradient(0deg,rgba(5,5,6,.72) 0%,rgba(5,5,6,0) 34%);
   }
-  .hero-inner{position:relative;padding:30px 44px 0 46px}
+  .hero-inner{position:relative;padding:30px 44px 52px 46px}
   .hero-top{display:flex;justify-content:space-between;align-items:flex-start;gap:20px}
   .crumb{font-size:12px;font-weight:500;letter-spacing:.34em;padding-top:8px}
   .crumb::after{content:"";display:block;height:1px;margin-top:16px;width:min(430px,42vw);
@@ -156,21 +156,9 @@
 
   .plus{position:absolute;color:var(--accent);font-weight:300;line-height:1;pointer-events:none;user-select:none}
   .plus svg{display:block}
-  .plus-1{right:38%;bottom:238px}
-  .plus-2{right:104px;bottom:196px}
-  .plus-3{right:190px;bottom:118px}
-
-  /* stats */
-  .stats{
-    position:relative;display:grid;grid-template-columns:repeat(4,1fr);
-    margin:44px 44px 0 46px;padding:6px 0 30px;
-  }
-  .stat{padding:2px 26px 0 34px;border-left:1px solid var(--line)}
-  .stat:first-child{border-left:0;padding-left:0}
-  .stat .num{font-family:var(--serif);font-weight:700;font-size:clamp(28px,2.4vw,38px);line-height:1}
-  .stat .num .down{color:var(--ink);font-size:.62em;vertical-align:.18em;margin-left:10px}
-  .stat .num .delta{font-family:var(--sans);font-size:14px;font-weight:400;letter-spacing:.06em;margin-left:8px;color:var(--ink)}
-  .stat .lab{margin-top:10px;font-size:10.5px;letter-spacing:.3em;color:var(--ink);white-space:nowrap}
+  .plus-1{right:38%;bottom:150px}
+  .plus-2{right:104px;bottom:108px}
+  .plus-3{right:190px;bottom:34px}
 
   /* ============ PLATFORM STRIP ============ */
   .platform{
@@ -277,10 +265,7 @@
     .hero-copy{padding-top:26px}
     h1{font-size:42px}
     .hero-ctas .btn{flex:1 1 100%;justify-content:center}
-    .stats{grid-template-columns:1fr 1fr;margin:34px 20px 0;gap:26px 0;padding-bottom:26px}
-    .stat{padding-left:20px}
-    .stat:nth-child(odd){border-left:0;padding-left:0}
-    .stat .lab{white-space:normal;line-height:1.7}
+    .hero-inner{padding-bottom:40px}
     .platform{grid-template-columns:1fr;padding:32px 20px 38px;gap:26px}
     .cards{grid-template-columns:1fr}
     .section{padding:42px 20px 46px}
@@ -363,24 +348,6 @@
         <span class="plus plus-2" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 52 52"><path d="M26 0v52M0 26h52" stroke="currentColor" stroke-width="1.6"/></svg></span>
         <span class="plus plus-3" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 52 52"><path d="M26 0v52M0 26h52" stroke="currentColor" stroke-width="1.5"/></svg></span>
 
-        <div class="stats" role="list" aria-label="Platform results">
-          <div class="stat" role="listitem">
-            <div class="num">1,392</div>
-            <div class="lab">ENDPOINTS MANAGED</div>
-          </div>
-          <div class="stat" role="listitem">
-            <div class="num">105</div>
-            <div class="lab">ACTIVE VULNERABILITIES <span aria-hidden="true">↓</span> −90%</div>
-          </div>
-          <div class="stat" role="listitem">
-            <div class="num">98.6%</div>
-            <div class="lab">SLA COMPLIANCE</div>
-          </div>
-          <div class="stat" role="listitem">
-            <div class="num">24/7</div>
-            <div class="lab">OPERATIONAL VISIBILITY</div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -475,8 +442,8 @@
       <p class="lede">One system of record for the work that keeps the enterprise running — tickets, devices, vulnerabilities, and the evidence auditors ask for.</p>
       <div class="cols">
         <div class="mini"><h3>Service Desk</h3><p>Incidents, requests, and changes triaged, assigned, and tracked against SLA from a single queue.</p><span class="tag">ITSM</span></div>
-        <div class="mini"><h3>Patch &amp; Vulnerability</h3><p>Findings prioritized by risk, remediated on schedule, and validated — 105 active vulnerabilities, down 90%.</p><span class="tag">REMEDIATION</span></div>
-        <div class="mini"><h3>Endpoint Fleet</h3><p>1,392 endpoints managed — secured, configured, and kept compliant across the organization.</p><span class="tag">1,392 ENDPOINTS</span></div>
+        <div class="mini"><h3>Patch &amp; Vulnerability</h3><p>Findings in your environment prioritized by risk, remediated on schedule, and validated — a managed service that keeps exposure trending down.</p><span class="tag">REMEDIATION</span></div>
+        <div class="mini"><h3>Endpoint Fleet</h3><p>Every endpoint in your fleet secured, configured, and kept compliant — managed for you across the whole organization, however large it grows.</p><span class="tag">ENDPOINT MANAGEMENT</span></div>
       </div>
     </section>
 
